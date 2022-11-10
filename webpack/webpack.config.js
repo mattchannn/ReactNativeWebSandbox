@@ -14,11 +14,11 @@ const compileNodeModules = [
 ].map(moduleName => path.resolve(appDirectory, `node_modules/${moduleName}`));
 
 const babelLoaderConfiguration = {
-  test: /\.js$/,
+  test: /\.(js|jsx)$/,
   // Add every directory that needs to be compiled by Babel during the build.
   include: [
     path.resolve(appDirectory, 'index.web.js'),
-    path.resolve(appDirectory, 'App.web.js'),
+    path.resolve(appDirectory, 'App.js'),
     path.resolve(appDirectory, 'src'),
     ...compileNodeModules,
   ],
@@ -72,7 +72,7 @@ module.exports = {
     // If you're working on a multi-platform React Native app, web-specific
     // module implementations should be written in files using the extension
     // `.web.js`.
-    extensions: ['.web.js', '.js'],
+    extensions: ['.web.js', '.js', '.jsx'],
   },
   plugins: [
     new HtmlWebpackPlugin({
