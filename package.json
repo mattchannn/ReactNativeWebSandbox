@@ -6,22 +6,34 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
+    "web": "webpack serve --mode=development --config ./webpack/webpack.config.js",
+    "build": "build:clean && webpack --mode=production --config ./webpack/webpack.config.js",
+    "build:clean": "rm -rf dist",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
     "react": "18.1.0",
-    "react-native": "0.70.5"
+    "react-dom": "^18.2.0",
+    "react-native": "0.70.5",
+    "react-native-web": "^0.18.10"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-jest": "^26.6.3",
+    "babel-loader": "^9.1.0",
+    "babel-plugin-react-native-web": "^0.18.10",
     "eslint": "^7.32.0",
+    "html-webpack-plugin": "^5.5.0",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "0.72.3",
-    "react-test-renderer": "18.1.0"
+    "react-test-renderer": "18.1.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
   },
   "jest": {
     "preset": "react-native"
