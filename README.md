@@ -14,9 +14,12 @@ You should have a fundamental understanding on web bundler like webpack, technol
 
 ## 📔 Additional Resources
 
-This is heavily inspired by the below tutorial.
+This is heavily inspired by the below resources.
 
-- [Medium tutorial](https://arry.medium.com/how-to-add-react-native-web-to-an-existing-react-native-project-eb98c952c12f)
+- DevHubApp
+- [How to add React Native Web to an existing React Native project](https://arry.medium.com/how-to-add-react-native-web-to-an-existing-react-native-project-eb98c952c12f)
+- [Should You Use React Native Web for Your Next Project?](https://www.youtube.com/watch?v=h7nYxVjVPSk)
+- [Setting Up a React Native Web Monorepo](https://www.youtube.com/watch?v=m5sf3LNhvc0)
 
 ## 🎃 What you should learn from this repo
 
