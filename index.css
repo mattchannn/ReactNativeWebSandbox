@@ -1,6 +1,14 @@
+html {
+  --main-background-color: #1f2229;
+}
+
 #root,
 body,
 html {
   width: 100%;
   height: 100%;
+}
+
+#root {
+  background: var(--main-background-color);
 }

@@ -46,6 +46,11 @@ const imageLoaderConfiguration = {
   },
 };
 
+const cssLoaderConfiguration = {
+  test: /\.css$/i,
+  use: ['style-loader', 'css-loader'],
+};
+
 module.exports = {
   entry: [
     // load any web API polyfills
@@ -61,7 +66,11 @@ module.exports = {
   },
 
   module: {
-    rules: [babelLoaderConfiguration, imageLoaderConfiguration],
+    rules: [
+      babelLoaderConfiguration,
+      imageLoaderConfiguration,
+      cssLoaderConfiguration,
+    ],
   },
 
   resolve: {
