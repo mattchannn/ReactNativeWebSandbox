@@ -1,10 +1,12 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
+import StyledText from './src/components/StyledText';
+import theme from './src/styles/theme';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hello from {'\n'}React Native Web!</Text>
+      <StyledText style={styles.title}>Hello from React Native Web!</StyledText>
     </View>
   );
 };
@@ -12,14 +14,11 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 40,
-    paddingHorizontal: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
+    ...theme.ALIGN_JUSTIFY_CENTER,
   },
   title: {
-    fontSize: 40,
-    whiteSpace: 'initial',
+    fontSize: theme.H1_FONT,
+    color: theme.TEXT_COLOR,
   },
 });
 
