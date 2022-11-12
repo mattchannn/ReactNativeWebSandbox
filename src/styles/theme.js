@@ -2,12 +2,14 @@
  * This file stores all shared variables for styling
  */
 
+import {Platform} from 'react-native';
+
 const theme = {
   /**
    * Text
    */
   TEXT_COLOR: '#9aa1b2',
-  H1_FONT: 40,
+  H1_FONT: Platform.OS === 'web' ? 40 : 25,
 
   /**
    * Spacing
