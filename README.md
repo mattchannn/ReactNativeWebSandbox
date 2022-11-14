@@ -12,6 +12,10 @@ You should have a fundamental understanding on web bundler like webpack, technol
 
 - master
 
+## 😰 Things to tackle
+
+1. Hover state with a shared component
+
 ## 📔 Additional Resources
 
 This project is heavily inspired by the below resources.
@@ -25,7 +29,9 @@ The react icon that this project used is from this [site](https://icons8.com/ico
 
 ## 🎃 What you should learn from this repo
 
-### App.web.js
+### webpack.config.js
+
+It configures how the web will work
 
 ## 💻 System Requirements
 
