@@ -8,7 +8,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     minWidth: 250,
     borderWidth: 2,
+
+    /**
+     * This is the only difference between Button.jsx and Button.web.jsx
+     */
     borderRadius: 20,
+
     borderColor: theme.BUTTON_BASE_COLOR,
     backgroundColor: theme.BUTTON_BASE_COLOR,
     cursor: 'pointer',
