@@ -25,7 +25,6 @@ const styles = StyleSheet.create({
 });
 
 export default function Button({style, children}) {
-  console.log(style);
   return (
     <View style={{...styles.container, ...(style?.container ?? null)}}>
       <Pressable>
