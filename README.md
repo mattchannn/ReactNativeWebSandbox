@@ -16,6 +16,8 @@ You should have a fundamental understanding on web bundler like webpack, technol
 
 1. Hover state with a shared component
 
+https://necolas.github.io/react-native-web/docs/pressable/
+
 ## 📔 Additional Resources
 
 This project is heavily inspired by the below resources.
